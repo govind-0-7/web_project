@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fc;
+}
+
+.custom-navbar {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.custom-navbar .navbar-brand, .custom-navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+.custom-navbar .nav-link:hover {
+    color: #ffd966 !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 100px 0;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.features i {
+    color: #2a5298;
+}
+
+.auth-body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+/* Dashboard Sidebar Layout */
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 260px;
+    background: #1e2a3a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.sidebar .nav-link {
+    color: #ddd;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background: #2a5298;
+    color: white;
+}
+.main-content {
+    margin-left: 260px;
+    padding: 30px;
+    width: 100%;
+    background: #f4f7fc;
+    min-height: 100vh;
+}
+
+/* Table Styling */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.table-hover tbody tr:hover {
+    background-color: #e6f7ff;
+    transition: 0.2s;
+}
+.btn-register {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+.btn-drop {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+/* Gallery Hover */
+.gallery-card img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: #1e3c72;
+    color: white;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+}
